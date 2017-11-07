@@ -1,0 +1,992 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.09 of 10 March 2017
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running in Model-Checking mode with 2 workers.
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file MC.tla
+Parsing file syncCon2.tla
+Parsing file C:\STUDY\COURSE\DS\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.201704142137\tla2sany\StandardModules\TLC.tla
+Parsing file C:\STUDY\COURSE\DS\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.201704142137\tla2sany\StandardModules\Integers.tla
+Parsing file C:\STUDY\COURSE\DS\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.201704142137\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\STUDY\COURSE\DS\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.201704142137\tla2sany\StandardModules\FiniteSets.tla
+Parsing file C:\STUDY\COURSE\DS\TLA\toolbox\plugins\org.lamport.tlatools_1.0.0.201704142137\tla2sany\StandardModules\Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module syncCon2
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2017-10-24 23:45:12)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 2 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 2 branches of temporal properties for the current state space with 19300 total distinct states at (2017-10-24 23:45:16)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2017-10-24 23:45:16
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(22) at 2017-10-24 23:45:16: 35575 states generated (35,575 s/min), 10419 distinct states found (10,419 ds/min), 1538 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ mb = <<{}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 1
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<0, 0, 0>>
+/\ pc = <<"P", "P", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<TRUE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<1..3, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 1
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 0, 0>>
+/\ pc = <<"PS", "P", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<TRUE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 0, 0>>
+/\ pc = <<"PS", "P", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 0, 0>>
+/\ pc = <<"PR", "P", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, 1..3, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 0>>
+/\ pc = <<"PR", "PS", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2}, {}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {2, 3}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 0>>
+/\ pc = <<"PR", "PS", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2}, {2}, {}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {3}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 0>>
+/\ pc = <<"PR", "PS", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2}, {2}, {2}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 0>>
+/\ pc = <<"PR", "PS", "P">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2}, {2}, {2}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, 1..3>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PS", "PS">>
+/\ pt = <<0, 0, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2}, {2}, {2}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, 1..3>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 1, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {2, 3}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 1, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2, 3}, {2}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {3}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 1, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2, 3}, {2, 3}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 1, 0>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2, 3}, {2, 3}>>
+/\ pmb_count = <<0, 0, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, -1, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, 0, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "P", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, 1..3, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, {2, 3}, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, {3}, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 1, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2, 3}>>
+/\ pmb_count = <<0, 2, 0>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, -1>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "PR">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, 0>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 3>>
+/\ pc = <<"PR", "PR", "P">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, 1..3>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, {2, 3}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, {3}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 2, 1>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 2, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, -1, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "P", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, 1..3, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+29: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, {2, 3}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+30: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, {3}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+31: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PS", "PR">>
+/\ pt = <<0, 2, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+32: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 1, 2>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PR">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, -1>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+33: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "P">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+34: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, 1..3>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+35: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {2, 3}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+36: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {3}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+37: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PS">>
+/\ pt = <<0, 3, 2>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+38: <Action line 120, col 13 to line 140, col 62 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {2}, {2}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 1, 1>>
+/\ t = <<FALSE, FALSE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "PR", "PR">>
+/\ pt = <<0, 3, 3>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+39: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 0, 1>>
+/\ t = <<FALSE, TRUE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "P", "PR">>
+/\ pt = <<0, 3, 3>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+40: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {2}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 0, 1>>
+/\ t = <<FALSE, TRUE, FALSE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "Done", "PR">>
+/\ pt = <<0, 3, 3>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+41: <Action line 142, col 13 to line 156, col 58 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 0, 0>>
+/\ t = <<FALSE, TRUE, TRUE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "Done", "P">>
+/\ pt = <<0, 3, 3>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+42: <Action line 109, col 12 to line 118, col 79 of module syncCon2>
+/\ mb = <<{1, 2, 3}, {}, {}>>
+/\ pmb_count = <<0, 1, 1>>
+/\ Q = <<{2, 3}, {}, {}>>
+/\ d = <<-1, 2, 2>>
+/\ FailNum = 0
+/\ r = <<1, 0, 0>>
+/\ t = <<FALSE, TRUE, TRUE>>
+/\ v = <<1, 2, 2>>
+/\ pc = <<"PR", "Done", "Done">>
+/\ pt = <<0, 3, 3>>
+/\ pv = <<0, 2, 2>>
+/\ up = <<FALSE, TRUE, TRUE>>
+/\ Fail = 1
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2017-10-24 23:45:20
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 37 to line 112, col 66 of module syncCon2: 1140
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 37 to line 113, col 69 of module syncCon2: 9058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 26 to line 114, col 56 of module syncCon2: 10198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 26 to line 115, col 57 of module syncCon2: 10198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 26 to line 116, col 59 of module syncCon2: 248
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 39 to line 117, col 39 of module syncCon2: 248
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 42 to line 117, col 42 of module syncCon2: 248
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 28 to line 118, col 34 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 37 to line 118, col 38 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 41 to line 118, col 42 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 45 to line 118, col 45 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 48 to line 118, col 48 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 51 to line 118, col 52 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 55 to line 118, col 58 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 61 to line 118, col 62 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 65 to line 118, col 73 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 76 to line 118, col 76 of module syncCon2: 10446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 32 to line 123, col 78 of module syncCon2: 125037
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 32 to line 124, col 69 of module syncCon2: 125037
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 126, col 49 to line 126, col 81 of module syncCon2: 15153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 49 to line 127, col 70 of module syncCon2: 15153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 61 to line 129, col 67 of module syncCon2: 15153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 70 to line 129, col 71 of module syncCon2: 15153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 56 to line 131, col 62 of module syncCon2: 94731
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 65 to line 131, col 66 of module syncCon2: 94731
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 132, col 27 to line 132, col 58 of module syncCon2: 125037
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 133, col 27 to line 133, col 34 of module syncCon2: 125037
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 38 to line 135, col 75 of module syncCon2: 8211
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 38 to line 137, col 45 of module syncCon2: 21087
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 27 to line 138, col 58 of module syncCon2: 29298
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 40 to line 139, col 46 of module syncCon2: 29298
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 49 to line 139, col 50 of module syncCon2: 29298
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 53 to line 139, col 54 of module syncCon2: 29298
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 57 to line 139, col 57 of module syncCon2: 29298
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 29 to line 140, col 29 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 32 to line 140, col 32 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 35 to line 140, col 38 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 41 to line 140, col 41 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 44 to line 140, col 45 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 48 to line 140, col 56 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 59 to line 140, col 59 of module syncCon2: 154335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 144, col 16 to line 144, col 50 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 145, col 16 to line 145, col 57 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 27 to line 147, col 53 of module syncCon2: 6320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 27 to line 148, col 61 of module syncCon2: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 16 to line 149, col 78 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 16 to line 150, col 45 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 152, col 27 to line 152, col 56 of module syncCon2: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 154, col 27 to line 154, col 32 of module syncCon2: 6320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 155, col 16 to line 155, col 46 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 29 to line 156, col 35 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 38 to line 156, col 39 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 42 to line 156, col 43 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 46 to line 156, col 49 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 52 to line 156, col 52 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 55 to line 156, col 55 of module syncCon2: 6614
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 12 to line 89, col 18 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 21 to line 89, col 22 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 25 to line 89, col 26 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 29 to line 89, col 29 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 32 to line 89, col 32 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 35 to line 89, col 36 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 39 to line 89, col 42 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 45 to line 89, col 46 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 49 to line 89, col 49 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 52 to line 89, col 53 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 56 to line 89, col 56 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 59 to line 89, col 67 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 70 to line 89, col 70 of module syncCon2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(43) at 2017-10-24 23:45:20: 171396 states generated (1,342,001 s/min), 47799 distinct states found (374,258 ds/min), 2040 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+171396 states generated, 47799 distinct states found, 2040 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 43.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 08s at (2017-10-24 23:45:20)
+@!@!@ENDMSG 2186 @!@!@
