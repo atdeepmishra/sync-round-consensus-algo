@@ -1,10 +1,11 @@
-# Concensus problem in Distributed Systems
+# Consensus problem in Distributed Systems
+A fundamental problem in distributed systems is to achieve overall system reliability in the presence of a number of faulty processes. This often requires processes to agree on some value that is needed during computation. In other terms it is called achieving consensus in distributed network. Examples of applications of consensus include whether to commit a transaction to a database, agreeing on the identity of a leader, state machine replication, and atomic broadcasts. The project simulates the consensus problem in Distributed Systems using TLA+. It also implements one of the solution to achieve consensus in Synchronous network.
 
-The project simulates the concensus problem in Distributed Systems using TLA+.
+##
 
 ### With no Node Failures:
 
-**Problem Statement:** How to achieve concensus in Distributed System.
+**Problem Statement:** How to achieve consensus in Distributed System.
 
 **Solution:** In a synchronous network, the concensus can be reached in single round of message exchange. Every process broadcasts (to all other processes, including itself) its initial value. After one round , each process decides on the minimum value it
 received. This will result into every process having same minimun value.
