@@ -3,7 +3,7 @@ A fundamental problem in distributed systems is to achieve overall system reliab
 
 ##
 
-### With no Node Failures:
+### 1. With no Node Failures:
 
 **Problem Statement:** How to achieve consensus in Distributed System.
 
@@ -14,7 +14,7 @@ Based on above analogy, project [syncConWithnoFailure](consensus-with-no-failure
 
 ##
 
-### With N Nodes Failures:
+### 2. With N Nodes Failures:
 
 **Problem Statement:** The Aggrement property and validitiy will fail if there is any node failure while sending the message to other nodes. Single round of message exchange will not help to reach the consensue by all the parties.
 
