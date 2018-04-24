@@ -18,7 +18,7 @@ Based on above analogy, project [syncConWithnoFailure](consensus-with-no-failure
 
 **Problem Statement:** The Aggrement property and validitiy will fail if there is any node failure while sending the message to other nodes. Single round of message exchange will not help to reach the consensue by all the parties.
 
-In brief - we need to run for multiple rounds to establish the consences. However, every nodes need  to identify when to go for the next round and when to stop.
+In brief - we need to run multiple rounds of message exchange to establish the consences. However, every nodes need  to identify when to go for the next round and when to stop.
 
 **Solution:** This problem can be solved by observing the behaviour of nodes' mail box and the decision in any two consecutive rounds of the node. If we closly monitor both these properties. If there is any failure the message count received by a node will be lesser than the previous round. Or the decision made in previous round would be different from  current round decision of a node. In general, either of the parameters will differ is there is any failure. By looking at the difference in both the property (mail box size, and decisions) of the node we can identify whether to go for next round or not.
 
